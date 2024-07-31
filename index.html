@@ -17,6 +17,243 @@
     />
   </head>
   <body>
+    <!-- Navigation -->
+      <div class="container-xxl position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-4 px-lg-5 py-3 py-lg-0">
+            <a href="#" class="navbar-brand p-0">
+                <h1 class="text-white m-0 text-32px"></i>Job<span class="text-success">Hub</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 pe-4">
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#job" class="nav-item nav-link">Job</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="#reservation" class="btn btn-primary py-2 px-4">Login</a>
+              </div>
+         </nav>
+
+        <!-- Hero Start -->
+        <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('images/girlonlaptop.png');">
+            </div>
+            <div class="carousel-item" style="background-image: url('images/Rectangle 114.png');">
+            </div>
+            <div class="carousel-item" style="background-image: url('images/4 Secrets To Hiring the Best Business Lawyer 1.png');">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+          <div class="hero-text">
+            <h1 class="text-white">Unlock Your Dream Job and Connect with Top Employers Today</h1>
+            <p class="lead">Explore which careers have the highest job satisfaction, best salaries, and more</p>
+          </div>
+          <div class="search-bar bg-white p-3 rounded shadow">
+            <form class="row g-2">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Your job title, keyword, or company">
+              </div>
+              <div class="col-md-4">
+                <select class="form-select " aria-label="Category">
+                  <option selected>Category</option>
+                  <option value="1">Engineering</option>
+                  <option value="2">Finance</option>
+                  <option value="3">Healthcare</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <button type="submit" class="btn btn-primary text-white w-100">Search</button>
+              </div>
+            </form>
+            <div class="container my-5">
+              <div class="stats-container">
+                <div class="stats-item">
+                  <h1>30k+</h1>
+                  <p>Worldwide Client</p>
+                </div>
+                <div class="stats-item">
+                  <h1>3%</h1>
+                  <p>Top Talents</p>
+                </div>
+                <div class="stats-item">
+                  <h1>25million</h1>
+                  <p>Dollar Payout</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+<!-- filter start -->
+ <div>
+  <h1 class="h1">Most Demanding Categories</h1>
+ </div>
+ <div class="container my-5">
+  <div class="row mb-4">
+    <div class="col ">
+      <button class="btn rounded-border-btn filter-btn" onclick="filterCards('all')">All</button>
+      <button class="btn rounded-border-btn filter-btn" onclick="filterCards('Cloud Engineer')">Cloud Engineer</button>
+      <button class="btn rounded-border-btn filter-btn" onclick="filterCards('Data Scientist')">Data Scientist</button>
+      <button class="btn rounded-border-btn filter-btn" onclick="filterCards('QA Engineer')">QA Engineer</button>
+      <button class="btn rounded-border-btn filter-btn" onclick="filterCards('UI/UX Designer')">UI/UX Designer</button>
+    </div>
+  </div>
+  <div class="row" id="card-container">
+    <h1 class="h2">Trending Job</h1>
+    <!-- Cloud Engineer Cards -->
+    <div class="col-md-3 job-card Cloud Engineer">
+      <div class="card">
+        <img src="images/Rectangle 12.png" class="card-img-top" alt="Cloud Engineer 1">
+        <div class="card-body">
+          <h5 class="card-title">Cloud Engineer 1</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 job-card Cloud Engineer">
+      <div class="card">
+        <img src="images/Rectangle 13.png" class="card-img-top" alt="Cloud Engineer 2">
+        <div class="card-body">
+          <h5 class="card-title">Cloud Engineer 2</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Data Scientist Cards -->
+    <div class="col-md-3 job-card Data Scientist">
+      <div class="card">
+        <img src="images/Rectangle 1.png.jpg" class="card-img-top" alt="Data Scientist 1">
+        <div class="card-body">
+          <h5 class="card-title">Data Scientist 1</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 job-card Data Scientist">
+      <div class="card">
+        <img src="images/Rectangle 11.png" class="card-img-top" alt="Data Scientist 2">
+        <div class="card-body">
+          <h5 class="card-title">Data Scientist 2</h5>
+        </div>
+      </div>
+    </div>
+    <!-- QA Engineer Cards -->
+    <div class="col-md-3 job-card QA Engineer">
+      <div class="card">
+        <img src="images/Rectangle 10.png" class="card-img-top" alt="QA Engineer 1">
+        <div class="card-body">
+          <h5 class="card-title">QA Engineer 1</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 job-card QA Engineer">
+      <div class="card">
+        <img src="images/Rectangle 10.png" class="card-img-top" alt="QA Engineer 2">
+        <div class="card-body">
+          <h5 class="card-title">QA Engineer 2</h5>
+        </div>
+      </div>
+    </div>
+    <!-- UI/UX Designer Cards -->
+    <div class="col-md-3 job-card UI/UX Designer">
+      <div class="card">
+        <img src="images/Rectangle 11.png" class="card-img-top" alt="UI/UX Designer 1">
+        <div class="card-body">
+          <h5 class="card-title">UI/UX Designer 1</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 job-card UI/UX Designer">
+      <div class="card">
+        <img src="images/Rectangle 10.png" class="card-img-top" alt="UI/UX Designer 2">
+        <div class="card-body">
+          <h5 class="card-title">UI/UX Designer 2</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <h1 class="h2">New Job Listing</h1>
+  <div class="row">
+    <div class="col-12">
+      <!-- Job Listing 1 -->
+      <div class="job-listing d-flex flex-wrap">
+        <div class="job-logo">
+          <img src="images/logos_google-developers.png" alt="Company Logo">
+        </div>
+        <div class="job-details">
+          <div class="job-title">Developer & expert in Javascript</div>
+        </div>
+        <div class="job-details">
+          <div class="job-info">Fulltime</div>
+          <div class="job-info1">July, 15, by <span class="job-info2">Slack</span></div>
+        </div>
+        <div class="job-details">
+          <div class="job-info3">Spain, Barcelona</div>
+          <div class="job-info2">Developer, Coder</div>
+        </div>
+        <div class="apply-btn">
+          <button class="app">Apply</button>
+        </div>
+      </div>
+      <!-- Job Listing 2 -->
+      <div class="job-listing d-flex flex-wrap">
+        <div class="job-logo">
+          <img src="images/logos_google-developers.png" alt="Company Logo">
+        </div>
+        <div class="job-details">
+          <div class="job-title">Developer & expert in Javascript</div>
+        </div>
+        <div class="job-details">
+          <div class="job-info">Fulltime</div>
+          <div class="job-info1">July, 15, by <span class="job-info2">Slack</span></div>
+        </div>
+        <div class="job-details">
+          <div class="job-info3">Spain, Barcelona</div>
+          <div class="job-info2">Developer, Coder</div>
+        </div>
+        <div class="apply-btn">
+          <button class="app">Apply</button>
+        </div>
+      </div>
+      <!-- Job Listing 3 -->
+      <div class="job-listing d-flex flex-wrap">
+        <div class="job-logo">
+          <img src="images/logos_google-developers.png" alt="Company Logo">
+        </div>
+        <div class="job-details">
+          <div class="job-title">Developer & expert in Javascript</div>
+        </div>
+        <div class="job-details">
+          <div class="job-info">Fulltime</div>
+          <div class="job-info1">July, 15, by <span class="job-info2">Slack</span></div>
+        </div>
+        <div class="job-details">
+          <div class="job-info3">Spain, Barcelona</div>
+          <div class="job-info2">Developer, Coder</div>
+        </div>
+        <div class="apply-btn">
+          <button class="app">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- filter end -->
+  
     <!-- section -->
     <section class="hero ">
       <!-- hero section -->
