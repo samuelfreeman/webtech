@@ -151,4 +151,117 @@ nav{
   }
   .apply-btn button:hover {
     background-color: #0056b3;
-  }
+  }.hero {
+    background-image: url("../images/girlonlaptop.png");
+    width: 100%;
+    height: 687px;
+}
+
+.hero div h1 span {
+    color: #00FF29;
+}
+
+.hero div h1,
+div p {
+    color: white;
+}
+
+#card1 {
+    background-color: white;
+    width: 370px;
+    height: 121px;
+
+
+}
+
+#card1 h1 {
+    color: black;
+}
+
+#card1 p {
+    color: #00FF29;
+}
+
+#cards {
+    margin-top: 200px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+/* Hide the default file input */
+.hidden-input {
+    display: none;
+}
+
+/* Style the label as a button */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 150px;
+    background-color: #00FF29;
+    color: white;
+    border-radius: 5px;
+    width: 533px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Change the cursor to pointer when hovering over the label */
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+#upload-resume {
+    padding: 30px;
+    width: 1098px;
+    padding-left: 300px;
+    color: black;
+
+}
+
+.section2 {
+    width: 1250px;
+    height: 20vh;
+    margin: 30px;
+    padding-left: 150px;
+
+}
+
+#upload-resume h1,
+p {
+    color: black;
+}
+
+.p-3 {
+    color: black;
+}
+
+.price-range-slider {
+    color: black;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.price-range-slider input {
+    width: 497px;
+    background: #00FF29;
+}
+
+.prices {
+    display: flex;
+
+}
+
+.aboutUs{
+    background-image: url("../images/about.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 299px;
+    padding: 50px;
+    color: white;
+    margin-top: 800px;
+}
+.prices span {
+    padding-right: 60px;
+}
+
