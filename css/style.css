@@ -1,35 +1,62 @@
-/*** Navbar ***/
+nav {
+  background-color: #1D1D1D;
+
+}
+
+
+
+
+
+/* Revisiting the universal selector for a more targeted reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Explicitly setting body padding and margin for screens wider than 300px */
+@media (min-width: 300px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* Adjusting the navbar link margin if necessary */
 .navbar-dark .navbar-nav .nav-link {
-    position: static;
-    margin-left: 25px;
-    padding: 35px 0;
-    font-size: 15px;
-    color: var(--light) !important;
-    text-transform: uppercase;
-    font-weight: 500;
-    outline: none;
-    transition: .5s;
+  position: static;
+  
+  padding: 35px 0;
+  font-size: 15px;
+  color: var(--light) !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  outline: none;
+  transition: .5s;
+  width: 100%;
 }
-nav{
-    background-color:#1D1D1D ;
-    
-}
+
+/* Other CSS remains unchanged */
 
 
 
 /* Custom styles for better responsive design */
 /* Styles for larger screens */
 @media (min-width: 1200px) {
-  .section2 .col-12, .section2 .col-md-6 {
-    flex: 0 0 50%; 
-    width: 100%; 
-    
-    padding: 20px; 
+
+  .section2 .col-12,
+  .section2 .col-md-6 {
+    flex: 0 0 50%;
+    width: 100%;
+
+    padding: 20px;
   }
 
   .section2 {
     width: 100%;
-    padding: 20px; /* Adjust padding as needed */
+    padding: 20px;
+    /* Adjust padding as needed */
   }
 
   .section2 .col-12 {
@@ -64,189 +91,212 @@ nav{
 }
 
 
-  .hero-carousel .carousel-inner {
-    height: 95vh;
-  }
-  .hero-carousel .carousel-item {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-  }
+.hero-carousel .carousel-inner {
+  height: 95vh;
+}
 
-  .lead{
-    margin: 20px 0px;
-  }
-  .hero-text {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    width: 60%;
-  }
-  .search-bar {
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 800px;
-    height: 100px;
-  }
-  .form-select{
-    border: none;
-  }
+.hero-carousel .carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 
-  .form-control{
-    border-right:2px #686868 solid;
-    border-left: none;
-    border-bottom: none;
-    border-top: none;
-  }
+.lead {
+  margin: 20px 0px;
+}
 
-  .stats-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-size: 24px;
-  }
-  .stats-item {
-    flex: 1;
-    margin: 0 10px;
-  }
-  .stats-item h1, .stats-item p {
-    color: white;
-    font-size: 24px;
-  }
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 60%;
+}
+
+.search-bar {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px;
+  height: 100px;
+}
+
+.form-select {
+  border: none;
+}
+
+.form-control {
+  border-right: 2px #686868 solid;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+}
+
+.stats-item {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.stats-item h1,
+.stats-item p {
+  color: white;
+  font-size: 24px;
+}
+
 /* jfi */
 
-  .card-title {
-    text-align: center;
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
-  .filter-btn {
-    margin: 10px;
-  }
+.card-title {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
 
-  .h1{
-    font-size: 30px;
-    margin: 40px;
-  }
+.h1 {
+  font-size: 30px;
+  margin: 40px;
+}
 
-  .rounded-border-btn {
-    border-radius: 50px;
-    padding: 10px 20px; 
-    color: black;
-    background-color: #F6F6F6; 
-    font-weight: 500;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .rounded-border-btn:hover {
-    background-color: #007bff;
-    color: white; /* Text color on hover */
-  }
+.rounded-border-btn {
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: black;
+  background-color: #F6F6F6;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  .col{
-    display: flex ;
-    justify-content: center;
-  }
-  .job-listing {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
-    background-color: #f9f9f9;
-    transition: box-shadow 0.3s;
-  }
-  .job-listing:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  .job-logo img {
-    max-width: 60px;
-    max-height: 60px;
-    object-fit: contain;
-    margin-right: 15px;
-  }
-  .job-details {
-    flex-grow: 1;
-  }
-  .job-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: black;
-  }
-  .job-info {
-    font-size: 0.9em;
-    color: #555;
-    color: #00BB1E;
-    font-size: 15px;
-    font-weight: 600;
-  }
+.rounded-border-btn:hover {
+  background-color: #007bff;
+  color: white;
+  /* Text color on hover */
+}
 
-  .job-info2 {
-    font-size: 0.9em;
-    color: #555;
-    color: black;
-    font-size: 15px;
-    font-weight: 600;
-  }
+.col {
+  display: flex;
+  justify-content: space-around; 
+  margin: 0;
+}
+.filter-btn {
+  /* Example adjustment, reduce width or margins as needed */
+  
+  margin: 0; /* Adjust based on your design */
+}
 
-  .apply-btn {
-    margin-left: auto;
-  }
-  .apply-btn button {
-    background-color: #00BB1E;
-    color: #fff;
-    border: none;
-    border-radius: 70px;
-    padding: 6px 12px;
-    cursor: pointer;
-  }
-  .apply-btn button:hover {
-    background-color: #0056b3;
-  }.hero {
-    background-image: url("../images/girlonlaptop.png");
-    width: 100%;
-    height: 687px;
+.job-listing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s;
+}
+
+.job-listing:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-logo img {
+  max-width: 60px;
+  max-height: 60px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.job-details {
+  flex-grow: 1;
+}
+
+.job-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+}
+
+.job-info {
+  font-size: 0.9em;
+  color: #555;
+  color: #00BB1E;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.job-info2 {
+  font-size: 0.9em;
+  color: #555;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.apply-btn {
+  margin-left: auto;
+}
+
+.apply-btn button {
+  background-color: #00BB1E;
+  color: #fff;
+  border: none;
+  border-radius: 70px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.apply-btn button:hover {
+  background-color: #0056b3;
+}
+
+.hero {
+  background-image: url("../images/girlonlaptop.png");
+  width: 100%;
+  height: 687px;
 }
 
 .hero div h1 span {
-    color: #00FF29;
+  color: #00FF29;
 }
 
 .hero div h1,
 div p {
-    color: white;
+  color: white;
 }
 
 #card1 {
-    background-color: white;
-    width: 370px;
-    height: 125px;
- 
+  background-color: white;
+  width: 370px;
+  height: 125px;
+
 
 
 }
 
 #card1 h1 {
-    color: black;
+  color: black;
 }
 
 #card1 p {
-    color: #00FF29;
+  color: #00FF29;
 }
 
-#card2{
+#card2 {
   background-color: white;
   width: 370px;
   height: 121px;
-  
+
 
 }
 
@@ -282,85 +332,87 @@ div p {
 
 
 #cards {
-    margin-top: 200px;
-    padding-left: 140px;
-    padding-right: 140px;
+  margin-top: 200px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 /* Hide the default file input */
 .hidden-input {
-    display: none;
+  display: none;
 }
 
 /* Style the label as a button */
 .custom-file-upload {
-    display: inline-block;
-    padding: 10px 150px;
-    background-color: #00FF29;
-    color: white;
-    border-radius: 5px;
-    
-    cursor: pointer;
-    font-size: 14px;
+  display: inline-block;
+  padding: 10px 150px;
+  background-color: #00FF29;
+  color: white;
+  border-radius: 5px;
+
+  cursor: pointer;
+  font-size: 14px;
 }
 
 /* Change the cursor to pointer when hovering over the label */
 .custom-file-upload:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 #upload-resume {
-    padding: 30px;
-    
-    padding-left: 300px;
-    color: black;
+  padding: 30px;
+
+  padding-left: 300px;
+  color: black;
 
 }
+
 @media (min-width: 568px) {
-.section2 {
+  .section2 {
     width: 420px;
     height: 20vh;
     margin: 30px;
     padding-bottom: 500px;
 
-}
+  }
 }
 
 #upload-resume h1,
 p {
-    color: black;
+  color: black;
 }
 
 .p-3 {
-    color: black;
+  color: black;
 }
 
 .price-range-slider {
-    color: black;
-    display: flex;
+  color: black;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .price-range-slider input {
-    width: 497px;
-    background: #00FF29;
+  width: 497px;
+  background: #00FF29;
 }
 
 .prices {
-    display: flex;
+  display: flex;
 
 }
 
-.aboutUs{
-    background-image: url("../images/about.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 299px;
-    padding: 50px;
-    color: white;
-    margin-top: 800px;
+.aboutUs {
+  background-image: url("../images/about.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 299px;
+  padding: 50px;
+  color: white;
+  margin-top: 800px;
 }
+
 .prices span {
-    padding-right: 60px;
+  padding-right: 60px;
 }
